@@ -1,0 +1,166 @@
+html {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111111;
+    position: fixed;
+}
+
+header > nav > a{
+    color: white;
+    text-decoration: none;
+    padding: 0 2em 0 2em;
+}
+
+.get-it {
+    margin: 1%;
+    padding: 14px;
+    text-decoration: none;
+    border: none;
+    border-radius: 12px;
+    width: 180px;
+    color: white;
+    background-color: #ff4655;
+}
+
+.cover {
+    padding: 14em; 
+}
+
+.cover > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    color: white;
+    text-shadow: 0 0 6px black;
+}
+
+.logo-text {
+    padding: 2%;
+}
+
+.cover > video {
+    object-fit: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(30%);
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFBFE;
+    padding: 6em;
+}
+
+.about > article {
+    font-size: x-large;
+    color: #424B54;
+    max-width: 50%;
+}
+
+.game-info {
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #dad8d8;
+    color: #424B54;
+}
+
+.game-info > .crewmate {
+    width: 20%;
+    height: 20%;
+    margin-top: -4%;
+    margin-bottom: 4%;
+}
+
+.news {
+    display: flex;
+    justify-content: space-between;
+    height: 16em;
+    align-items: center;
+    font-size: x-large;
+    color: #FFFBFE;
+    background-color: #6f98ec;
+    overflow: hidden;
+}
+
+.news > article {
+    padding-left: 4em;
+}
+
+.view-page-button {
+    font-size: medium;
+    background-color: white;
+    padding: 14px;
+    width: 180px;
+    text-decoration: none;
+    border: none;
+    border-radius: 12px;
+    color: #424B54;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:grey;
+    background-color: #111111;
+    padding: 4em;
+}
+
+footer > p {
+    margin: 24px;
+}
+
+.email {
+    padding-bottom: 2em;
+}
+
+.email > input {
+    width: 360px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.email > button {
+    margin-left: 6px;
+    padding: 8px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #2e2e2e;
+}
+
+footer > nav {
+    flex-direction: row;
+}
+
+.social-media {
+    color:white;
+    text-decoration: none;
+    padding: 0 2em 0 2em;
+}
+
+.policy {
+    font-size: small;
+    color: white;
+    text-decoration: none;
+    padding: 0 2em 0 2em;
+}

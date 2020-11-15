@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Among Us</title>
+    <link rel="icon" href="img/logo.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet" type="text/css">
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="#">GAME INFO</a> <!-- WIP: game information page-->
+            <a href="#">NEWS</a> <!-- WIP: news page-->
+        </nav>
+        <button class="get-it" type="button" id="get-it">GET IT NOW</button>
+    </header>
+    
+    <div class="cover">
+        <section>
+            <p>Join your crewmates in a multiplayer game of teamwork and betrayal!</p>
+            <img class="logo-text" alt="logo text" src="img/logo-text.png" height="50%" width="50%">
+            <button class="get-it" type="button">GET IT NOW</button>
+        </section>
+        <video id="cover-bg-video" poster="img/poster.png" autoplay loop muted>
+            <source src="img/amongus_gameplay.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="about">
+        <article class="about-text">
+            <h1>About Among Us</h1>
+            <p>Play online or over local wifi with 4-10 players as you attempt to hold your spaceship together and return back to civilization. But beware... as there may be an alien impostor aboard!</p>
+        </article>
+        <iframe class="trailer" width="560" height="315" src="https://www.youtube.com/embed/NSJ4cESNQfE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="game-info">
+        <img class="crewmate" alt="crewmate" src="img/crewmate.png">
+        <article class="game-info-text">
+            <h1>How to play</h1>
+            <p>Find out how to play the game!</p>
+            <button class="view-page-button" type="button">View Game Info</button>
+        </article>
+    </div>
+
+    <div class="news">
+        <article>
+            <h1>Latest news</h1>
+            <p>We are trending! Join us!</p>
+            <button class="view-page-button" type="button">View News</button>
+        </article>
+        <img class="banner-img" alt="banner img" src="img/banner-img.png">
+    </div>
+</body>
+
+<footer>
+    <button class="get-it" type="button">GET IT NOW</button>
+    <img class="dev-logo" alt="dev logo" width="10%" height="10%" src="img/dev-logo.png">
+    <p>Connect with us!</p>
+    <section class="email">
+        <input type="email" id="email" placeholder="Sign up to our newsletter with email" name="email">
+        <button type="button">Subscribe</button>
+    </section>
+    <nav>
+        <a href="https://discord.com/invite/ZKBX694" class="social-media" target="_blank">Discord</a> |
+        <a href="https://www.facebook.com/Innersloth/" class="social-media" target="_blank">Facebook</a> |
+        <a href="https://twitter.com/InnerslothDevs" class="social-media" target="_blank">Twitter</a> |
+        <a href="https://innersloth.newgrounds.com/" class="social-media" target="_blank">Newgrounds</a>
+    </nav>
+    <p>© 2020 Innersloth, Among Us. All Rights Reserved.</p>
+    <nav>
+        <a href="http://www.innersloth.com/merchpolicy.php" class="policy" target="_blank">Merch Policy</a> |
+        <a href="http://www.innersloth.com/privacy.php" class="policy" target="_blank">Privacy Policy</a>
+    </nav>
+</footer>
+
+</html>
