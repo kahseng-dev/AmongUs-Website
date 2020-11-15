@@ -1,5 +1,5 @@
 # Among Us Website Revamp #
-This website is a revamp of the original Among Us Website. Among Us is the #1 trending game on IOS and Android devices as of (15/11/2020). With that said, looking at the original website, it is very outdated, which can mislead new players looking to explore more about the game.
+This website is a revamp of the original Among Us website. Among Us is the #1 trending game on IOS and Android devices as of 15/11/2020. With that said, looking at the original website, it is very outdated, which can mislead new players looking to explore more about the game.
 
 This project aims to update the website in both information and design so that new players that visit the website can find updated information about the game.
 
@@ -20,20 +20,31 @@ The user audience intent and purpose:
   - News media or bloggers looking to write a report or an article about the game.
   - Make it easy to reach out to the developers of the game such as via their developer contacts or social media links.
 
-Wireframe: Will update soon.
+Wireframe: https://github.com/kahseng-dev/AmongUs-Website/blob/main/Wireframe/Among%20Us%20Website%20Wireframe.pdf 
 
 ## Features ##
 ### Existing Features ###
-- Will update soon.
+- Home Page
 
 ### Features Left to Implement ###
-- Home Page
 - Game Information Page
 - News Page
 - Make buttons and inputs function
 - Make Website Responsive
 
 ## Technologies Used ##
+- HTML
+  - Build the website.
+- CSS
+  - CSS for styling html.
+- Visual Studio Code
+  - Integrated development environment used.
+- Adobe Illustrator
+  - Used to edit image assets.
+- Adobe Photoshop
+  - Used to edit image assets.
+- Adobe Premiere Pro
+  - Used to create the looping video cover.
 - Adobe XD
   - Used to create and plan the wireframe of the website.
 
@@ -45,7 +56,10 @@ Wireframe: Will update soon.
 - Original Site: http://www.innersloth.com/gameAmongUs.php
 
 ### Media ###
-- Will update soon.
+- Innersloth Logo: http://www.innersloth.com/
+- Among Us Crewmate PNG Asset: https://seeklogo.com/vector-logo/387055/among-us
+- normalize.css by Nicolas Gallagher: https://necolas.github.io/normalize.css/ 
 
 ### Acknowledgements ###
-- Will update soon.
+- General HTML & CSS Guide: https://www.w3schools.com/
+- Responsive CSS Video Background Tutorial: https://www.youtube.com/watch?v=emL9dkijfZY
