@@ -20,7 +20,7 @@ The user audience intent and purpose:
   - News media or bloggers looking to write a report or an article about the game.
   - Make it easy to reach out to the developers of the game such as via their developer contacts or social media links.
 
-Wireframe: https://github.com/kahseng-dev/AmongUs-Website/blob/main/Wireframe/Among%20Us%20Website%20Wireframe.pdf 
+Click [here](https://github.com/kahseng-dev/AmongUs-Website/blob/main/Wireframe/Among%20Us%20Website%20Wireframe.pdf) to view the project Wireframe.
 
 ## Features ##
 ### Existing Features ###
