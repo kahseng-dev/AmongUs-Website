@@ -1,0 +1,82 @@
+.role-cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12em;
+}
+
+.crewmate-info {
+    display: flex;
+    padding: 8em;
+}
+
+.crewmate-info > section {
+    max-width: 50%;
+    padding-right: 10%;
+}
+
+.crewmate-abilities {
+    padding: 4em;
+    background-color: lightgray;
+}
+
+.crewmate-abilities > section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imposter-info {
+    display: flex;
+    padding: 8em;
+}
+
+.imposter-info > img {
+    padding-right: 10%;
+}
+
+.imposter-abilities {
+    padding: 4em;
+    background-color: lightgray;
+}
+
+.imposter-abilities > section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#ability {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    padding: 4em;
+}
+
+#abilities-title {
+    text-align: center;
+}
+
+.related-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em;
+    background-color: #424B54;
+}
+
+.related-content > h1 {
+    color: whitesmoke;
+    padding-bottom: 24px; 
+}
+
+.related-content > section > a{
+    font-size: medium;
+    border: none;
+    padding: 12px 24px 12px 24px;
+    margin: 8px;
+    border-radius: 8px;
+    color: #424B54;
+    text-decoration: none;
+    background-color: whitesmoke;
+}

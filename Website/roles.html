@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Among Us</title>
+    <link rel="icon" href="img/logo.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="style-roles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a>GAME INFO</a>
+                    <ul>
+                        <li><a href="roles.html">ROLES</a></li>
+                        <li><a href="#">MAPS</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">NEWS</a></li>
+            </ul>
+        </nav>
+        <button class="get-it" type="button" id="get-it">GET IT NOW</button>
+    </header>
+    
+    <article class="role-cover">
+        <h1>Roles</h1>
+        <p>Within the game, there are two roles that will be given to the player at random.</p>
+    </article>
+
+    <div class="crewmate-info">
+        <section>
+            <h1>Crewmate</h1>
+            <p>The primary goal of a Crewmate is to complete all tasks while not being killed by the Impostor(s), with the secondary goal being to find The Impostor, and ejecting them off the ship. Crewmates who have been killed by An Impostor or ejected become ghosts.</p>
+        </section>
+        <img class="crewmate-banner" alt="crewmate-banner" src="img/crewmate_banner.png">
+    </div>
+
+    <div class="crewmate-abilities">
+        <h1 id="abilities-title">Crewmate Abilities</h1>
+        <section>
+            <article class="ability-report" id="ability">
+                <img class="report-icon" alt="report-icon" src="img/report.png">
+                <p>A Crewmate can use the report button to report a dead body and bring the entire crew into a meeting to discuss who The Impostor may be. Impostors also have this ability. The Report button is above the 'Use' button.</p>
+            </article>
+            <article class="ability-use" id="ability">
+                <img class="use-icon" alt="use-icon" src="img/use.png">
+                <p>A Crewmate can use the report button to report a dead body and bring the entire crew into a meeting to discuss who The Impostor may be. Impostors also have this ability. The Report button is above the 'Use' button.</p>
+            </article>
+        </section>
+    </div>
+
+    <div class="imposter-info">
+        <img class="imposter-banner" alt="imposter-banner" src="img/imposter_banner.png">
+        <section>
+            <h1>Imposter</h1>
+        </section>
+        <p></p>
+    </div>
+
+    <div class="imposter-abilities">
+        <h1 id="abilities-title">Imposter Abilities</h1>
+        <section>
+            <article class="ability-kill" id="ability">
+                <img class="kill-icon" alt="kill-icon" src="img/kill.png">
+                <p>An Impostor can kill a Crewmate. Killing a Crewmate leaves a dead body in the spot they were killed, and the Crewmates turn into a ghost. Kills have a cooldown of 10–60 seconds and a kill distance of either Short, Normal, or Long, which depend on the game options.</p>
+            </article>
+            <article class="ability-sabotage" id="ability">
+                <img class="sabotage-icon" alt="sabotage-icon" src="img/sabotage.png">
+                <p>An Impostor can Sabotage, which creates a temporary problem that Crewmates must either wait out, ignore, or fix. Impostors can fix their Sabotage, which may help them avoid suspicion. Impostors who are ghosts can also sabotage. On the maps The Skeld and Polus, Impostors can close doors to hinder player movement or conceal the suspicious activity. A ghost cannot fix a sabotage.</p>
+            </article>
+            <article class="ability-vent" id="ability">
+                <img class="vent-icon" alt="vent-icon" src="img/vent.png">
+                <p>The Impostor can hide in vents. Vents allow The Impostor to either hide or quickly move around the map. When close enough to a vent, the Sabotage button will be replaced with the vent button. However, hiding in a vent pauses both kill and sabotage cooldowns until The Impostor exits the vent. The Admin panel can still detect Impostors hiding in the vents of a room.</p>
+            </article>
+        </section>
+    </div>
+
+    <nav class="related-content">
+        <h1>Related Content</h1>
+        <section>
+            <a href="roles.html">Roles</a>
+            <a href="#">Maps</a>
+        </section>
+    </nav>
+
+</body>
+
+<footer>
+    <button class="get-it" type="button">GET IT NOW</button>
+    <img class="dev-logo" alt="dev logo" width="10%" height="10%" src="img/dev-logo.png">
+    <p>Connect with us!</p>
+    <section class="email">
+        <input type="email" id="email" placeholder="Sign up to our newsletter with email" name="email">
+        <button type="button">Subscribe</button>
+    </section>
+    <nav>
+        <a href="https://discord.com/invite/ZKBX694" class="contacts" target="_blank">Discord</a> |
+        <a href="https://www.facebook.com/Innersloth/" class="contacts" target="_blank">Facebook</a> |
+        <a href="https://twitter.com/InnerslothDevs" class="contacts" target="_blank">Twitter</a> |
+        <a href="https://innersloth.newgrounds.com/" class="contacts" target="_blank">Newgrounds</a> |
+        <a href="http://www.innersloth.com/About.php" class="contacts" target="_blank">Meet Us</a> |
+        <a href="https://store.innersloth.com/" class="contacts" target="_blank">Merch</a>
+    </nav>
+    <p>© 2020 Innersloth, Among Us. All Rights Reserved.</p>
+    <nav>
+        <a href="http://www.innersloth.com/merchpolicy.php" class="policy" target="_blank">Merch Policy</a> |
+        <a href="http://www.innersloth.com/privacy.php" class="policy" target="_blank">Privacy Policy</a>
+    </nav>
+</footer>
+
+</html>
