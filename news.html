@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -11,6 +11,7 @@
     <link href="css/style-custom/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/style-news.css" rel="stylesheet" type="text/css">
+    <script src="script/script.js" defer></script>
 </head>
 
 <body>
@@ -42,6 +43,28 @@
         <button class="get-it" id="get-it" type="button">GET IT NOW</button>
     </header>
 
+    <div class="bg-modal"> 
+        <div class="modal-content">
+            <div class="close">+</div>
+            <div class="purchase-platform">
+                <img alt="google play icon" src="img/icons/play-store-icon.png" width="72" height="72" />
+                <a href="https://play.google.com/store/apps/details?id=com.innersloth.spacemafia&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank">Google Play</a>
+            </div>
+            <div class="purchase-platform">
+                <img alt="app store icon" src="img/icons/apple-icon.png" width="72" height="72" />
+                <a href="https://apps.apple.com/us/app/among-us/id1351168404?ls=1" class="purchase-platform" target="_blank">App Store</a>
+            </div>
+            <div class="purchase-platform">
+                <img alt="itch io icon" src="img/icons/itchio-icon.png" width="72" height="72" />
+                <a href="https://innersloth.itch.io/among-us/purchase?popup=1" class="purchase-platform" target="_blank">itch.io</a>
+            </div>
+            <div class="purchase-platform">
+                <img alt="steam icon" src="img/icons/steam-icon.png" width="72" height="72" />
+                <a href="https://store.steampowered.com/app/945360/Among_Us/" class="purchase-platform" target="_blank">Steam</a>
+            </div>
+        </div>
+    </div>
+
     <div class = "cover">
         <h1>News</h1>
         <p>Keep in touch with us!</p>
@@ -49,42 +72,42 @@
 
     <img class="red-crewmate" alt="red-crewmate" src="img/red-crewmate.png">
 
-    <div class = "steam">
-        <section>
-            <h1>Steam</h1>
-            <p>For Among Us announcements, visit our Steam page!</p>
+    <div class = "social" id="steam">
+        <section class="social-text">
+            <h2>Steam</h2>
+            <p>Among Us announcements!</p>
             <a class="visit-page" href="https://steamcommunity.com/app/945360/eventcomments/" target="_blank">Steam Announcements</a>
         </section>
-        <img class="steam-cover" alt="steam cover" src="img/steam-cover.png">
+        <img class="social-cover" alt="steam cover" src="img/steam-cover.png">
     </div>
     
-    <div class = "twitter">
-        <section>
-            <h1>Twitter</h1>
+    <div class="social" id="twitter">
+        <section class="social-text">
+            <h2>Twitter</h2>
             <p>Find out what are we doing!</p>
             <a class="visit-page" href="https://twitter.com/InnerslothDevs" target="_blank">View Developer Tweets</a>
         </section>
-        <img class="twitter-cover" alt="twitter cover" src="img/twitter-cover.png">
+        <img class="social-cover" alt="twitter cover" src="img/twitter-cover.png">
     </div>
-
+    
     <img class="yellow-crewmate" alt="yellow-crewmate" src="img/yellow-crewmate.png">
-
-    <div class = "discord">    
-        <section>
-            <h1>Discord</h1>
+    
+    <div class="social" id="discord">    
+        <section class="social-text">
+            <h2>Discord</h2>
             <p>Follow the community!</p>
             <a class="visit-page" href="https://discord.com/invite/ZKBX694" target="_blank">Join Discord Server</a>
         </section>
-        <img class="discord-cover" alt="discord cover" src="img/discord-cover.png">
+        <img class="social-cover" alt="discord cover" src="img/discord-cover.png">
     </div>
 
-    <div class = "merch-store">
-        <section>
-            <h1>Innersloth Merch Store</h1>
+    <div class="social" id="merch-store">
+        <section class="social-text">
+            <h2>Innersloth Merch Store</h2>
             <p>Check out our merch!</p>
             <a class="visit-page" href="https://store.innersloth.com/" target="_blank">Buy Among Us Goodies</a>
         </section>
-        <img class="merch-cover" alt="merch cover" src="img/merch-cover.png">
+        <img class="social-cover" alt="merch cover" src="img/merch-cover.png">
     </div>
 
     <img class="white-crewmate" alt="white-crewmate" src="img/white-crewmate.png">
