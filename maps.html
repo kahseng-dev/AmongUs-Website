@@ -16,19 +16,31 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a>GAME INFO</a>
-                    <ul>
-                        <li><a href="roles.html">ROLES</a></li> <!-- WIP: roles page-->
-                        <li><a href="maps.html">MAPS</a></li> <!-- WIP: maps page-->
+        <nav class="nav-bar">
+            <label for="toggle" class="nav-bar__label">MENU</label>
+            <input type="checkbox" id="toggle" class="nav-bar__toggle">
+            <ul class="nav-bar__list">
+                <li class="nav-bar__list-item">
+                    <a href="index.html" class="nav-bar__link">HOME</a>
+                </li>
+                <li class="nav-bar__list-item">
+                    <label for="toggle-sub-1" class="nav-bar__sub-label">GAME INFO</label>
+                    <input type="checkbox" id="toggle-sub-1" class="nav-bar__toggle">
+                    <ul class="nav-bar__list">
+                        <li class="nav-bar__list-item">
+                            <a href="roles.html" class="nav-bar__link">ROLES</a>
+                        </li>
+                        <li class="nav-bar__list-item">
+                            <a href="maps.html" class="nav-bar__link">MAPS</a>
+                        </li>
                     </ul>
                 </li>
-                <li><a href="news.html">NEWS</a></li> <!-- WIP: news page-->
+                <li class="nav-bar__list-item">
+                    <a href="news.html" class="nav-bar__link">NEWS</a>
+                </li>
             </ul>
         </nav>
-        <button class="get-it" type="button" id="get-it">GET IT NOW</button>
+        <button class="get-it" id="get-it" type="button">GET IT NOW</button>
     </header>
 
     <h1 class="maps">MAPS</h1>
@@ -85,30 +97,28 @@
             <a href="maps.html">Maps</a>
         </section>
     </nav>
-
+    
+    <footer>
+        <a href="javascript:btn.onclick();" class="get-it">GET IT NOW</a>
+        <img class="dev-logo" alt="dev logo" width="140" height="128" src="img/dev-logo.png" />
+        <p>Subscribe to our newsletter!</p>
+        <div class="email-sub">
+            <input type="email" id="email" placeholder="Enter email">
+            <button type="button">Subscribe</button>
+        </div>
+        <nav>
+            <a href="https://discord.com/invite/ZKBX694" class="contacts" target="_blank">Discord</a> |
+            <a href="https://www.facebook.com/Innersloth/" class="contacts" target="_blank">Facebook</a> |
+            <a href="https://twitter.com/InnerslothDevs" class="contacts" target="_blank">Twitter</a> |
+            <a href="https://innersloth.newgrounds.com/" class="contacts" target="_blank">Newgrounds</a> |
+            <a href="http://www.innersloth.com/About.php" class="contacts" target="_blank">Meet Us</a> |
+            <a href="https://store.innersloth.com/" class="contacts" target="_blank">Merch</a>
+        </nav>
+        <p class="copyright">© 2020 Innersloth, Among Us. All Rights Reserved.</p>
+        <nav>
+            <a href="http://www.innersloth.com/merchpolicy.php" class="policy" target="_blank">Merch Policy</a> |
+            <a href="http://www.innersloth.com/privacy.php" class="policy" target="_blank">Privacy Policy</a>
+        </nav>
+    </footer>
 </body>
-
-<footer>
-    <button class="get-it" type="button">GET IT NOW</button>
-    <img class="dev-logo" alt="dev logo" width="10%" height="10%" src="img/dev-logo.png">
-    <p>Connect with us!</p>
-    <section class="email">
-        <input type="email" id="email" placeholder="Sign up to our newsletter with email" name="email">
-        <button type="button">Subscribe</button>
-    </section>
-    <nav>
-        <a href="https://discord.com/invite/ZKBX694" class="contacts" target="_blank">Discord</a> |
-        <a href="https://www.facebook.com/Innersloth/" class="contacts" target="_blank">Facebook</a> |
-        <a href="https://twitter.com/InnerslothDevs" class="contacts" target="_blank">Twitter</a> |
-        <a href="https://innersloth.newgrounds.com/" class="contacts" target="_blank">Newgrounds</a> |
-        <a href="http://www.innersloth.com/About.php" class="contacts" target="_blank">Meet Us</a> |
-        <a href="https://store.innersloth.com/" class="contacts" target="_blank">Merch</a>
-    </nav>
-    <p>© 2020 Innersloth, Among Us. All Rights Reserved.</p>
-    <nav>
-        <a href="http://www.innersloth.com/merchpolicy.php" class="policy" target="_blank">Merch Policy</a> |
-        <a href="http://www.innersloth.com/privacy.php" class="policy" target="_blank">Privacy Policy</a>
-    </nav>
-</footer>
-
 </html>

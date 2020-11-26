@@ -1,42 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Among Us</title>
     <link rel="icon" href="img/logo.jpg">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
     <link href="css/style-custom/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/style-index.css" rel="stylesheet" type="text/css">
+    <script src="script/script.js" defer></script>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a>GAME INFO</a>
-                    <ul>
-                        <li><a href="roles.html">ROLES</a></li> <!-- WIP: roles page-->
-                        <li><a href="maps.html">MAPS</a></li> <!-- WIP: maps page-->
+        <nav class="nav-bar">
+            <label for="toggle" class="nav-bar__label">MENU</label>
+            <input type="checkbox" id="toggle" class="nav-bar__toggle">
+            <ul class="nav-bar__list">
+                <li class="nav-bar__list-item">
+                    <a href="index.html" class="nav-bar__link">HOME</a>
+                </li>
+                <li class="nav-bar__list-item">
+                    <label for="toggle-sub-1" class="nav-bar__sub-label">GAME INFO</label>
+                    <input type="checkbox" id="toggle-sub-1" class="nav-bar__toggle">
+                    <ul class="nav-bar__list">
+                        <li class="nav-bar__list-item">
+                            <a href="roles.html" class="nav-bar__link">ROLES</a>
+                        </li>
+                        <li class="nav-bar__list-item">
+                            <a href="maps.html" class="nav-bar__link">MAPS</a>
+                        </li>
                     </ul>
                 </li>
-                <li><a href="news.html">NEWS</a></li> <!-- WIP: news page-->
+                <li class="nav-bar__list-item">
+                    <a href="news.html" class="nav-bar__link">NEWS</a>
+                </li>
             </ul>
         </nav>
-        <button class="get-it" type="button" id="get-it">GET IT NOW</button>
+        <button class="get-it" id="get-it" type="button">GET IT NOW</button>
     </header>
+
+    <div class="bg-modal"> 
+        <div class="modal-content">
+            <div class="close">+</div>
+            <div class="purchase-platform">
+                <img alt="google play icon" src="img/icons/play-store-icon.png" width="72" height="72" />
+                <a href="https://play.google.com/store/apps/details?id=com.innersloth.spacemafia&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank">Google Play</a>
+            </div>
+            <div class="purchase-platform">
+                <img alt="app store icon" src="img/icons/apple-icon.png" width="72" height="72" />
+                <a href="https://apps.apple.com/us/app/among-us/id1351168404?ls=1" class="purchase-platform" target="_blank">App Store</a>
+            </div>
+            <div class="purchase-platform">
+                <img alt="itch io icon" src="img/icons/itchio-icon.png" width="72" height="72" />
+                <a href="https://innersloth.itch.io/among-us/purchase?popup=1" class="purchase-platform" target="_blank">itch.io</a>
+            </div>
+            <div class="purchase-platform">
+                <img alt="steam icon" src="img/icons/steam-icon.png" width="72" height="72" />
+                <a href="https://store.steampowered.com/app/945360/Among_Us/" class="purchase-platform" target="_blank">Steam</a>
+            </div>
+        </div>
+    </div>
     
     <div class="cover">
-        <section>
+        <div class="cover-text">
             <p>Join your crewmates in a multiplayer game of teamwork and betrayal!</p>
-            <img class="logo-text" alt="logo text" src="img/logo-text.png" height="50%" width="50%">
-            <button class="get-it" type="button">GET IT NOW</button>
-        </section>
-        <video id="cover-bg-video" poster="img/poster.png" autoplay loop muted>
+            <img class="logo-text" alt="logo text" src="img/logo-text.png" width="707" height="219"  />
+            <a href="javascript:btn.onclick();" class="get-it">GET IT NOW</a>
+        </div>
+        <video preload="auto" id="cover-bg-video" poster="img/poster.png" autoplay loop muted>
             <source src="img/amongus_gameplay.mp4" type="video/mp4">
         </video>
     </div>
@@ -46,7 +79,7 @@
             <h1>About Among Us</h1>
             <p>Play online or over local wifi with 4-10 players as you attempt to hold your spaceship together and return back to civilization. But beware... as there may be an alien impostor aboard!</p>
         </article>
-        <iframe class="trailer" width="560" height="315" src="https://www.youtube.com/embed/NSJ4cESNQfE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="trailer" width="560" height="315" src="https://www.youtube.com/embed/NSJ4cESNQfE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <div class="game-info">
@@ -59,36 +92,35 @@
     </div>
 
     <div class="news">
-        <article>
+        <article class="news-text">
             <h1>Latest news</h1>
             <p>We are trending! Join us!</p>
             <a href="news.html" class="view-page">View News</a>
         </article>
-        <img class="banner-img" alt="banner img" src="img/banner-img.png">
+        <img class="news-banner" alt="news-banner" src="img/news-banner.png">
     </div>
+
+    <footer>
+        <a href="javascript:btn.onclick();" class="get-it">GET IT NOW</a>
+        <img class="dev-logo" alt="dev logo" width="140" height="128" src="img/dev-logo.png" />
+        <p>Subscribe to our newsletter!</p>
+        <div class="email-sub">
+            <input type="email" id="email" placeholder="Enter email">
+            <button type="button">Subscribe</button>
+        </div>
+        <nav>
+            <a href="https://discord.com/invite/ZKBX694" class="contacts" target="_blank">Discord</a> |
+            <a href="https://www.facebook.com/Innersloth/" class="contacts" target="_blank">Facebook</a> |
+            <a href="https://twitter.com/InnerslothDevs" class="contacts" target="_blank">Twitter</a> |
+            <a href="https://innersloth.newgrounds.com/" class="contacts" target="_blank">Newgrounds</a> |
+            <a href="http://www.innersloth.com/About.php" class="contacts" target="_blank">Meet Us</a> |
+            <a href="https://store.innersloth.com/" class="contacts" target="_blank">Merch</a>
+        </nav>
+        <p class="copyright">© 2020 Innersloth, Among Us. All Rights Reserved.</p>
+        <nav>
+            <a href="http://www.innersloth.com/merchpolicy.php" class="policy" target="_blank">Merch Policy</a> |
+            <a href="http://www.innersloth.com/privacy.php" class="policy" target="_blank">Privacy Policy</a>
+        </nav>
+    </footer>
 </body>
-
-<footer>
-    <button class="get-it" type="button">GET IT NOW</button>
-    <img class="dev-logo" alt="dev logo" width="10%" height="10%" src="img/dev-logo.png">
-    <p>Connect with us!</p>
-    <section class="email">
-        <input type="email" id="email" placeholder="Sign up to our newsletter with email" name="email">
-        <button type="button">Subscribe</button>
-    </section>
-    <nav>
-        <a href="https://discord.com/invite/ZKBX694" class="contacts" target="_blank">Discord</a> |
-        <a href="https://www.facebook.com/Innersloth/" class="contacts" target="_blank">Facebook</a> |
-        <a href="https://twitter.com/InnerslothDevs" class="contacts" target="_blank">Twitter</a> |
-        <a href="https://innersloth.newgrounds.com/" class="contacts" target="_blank">Newgrounds</a> |
-        <a href="http://www.innersloth.com/About.php" class="contacts" target="_blank">Meet Us</a> |
-        <a href="https://store.innersloth.com/" class="contacts" target="_blank">Merch</a>
-    </nav>
-    <p>© 2020 Innersloth, Among Us. All Rights Reserved.</p>
-    <nav>
-        <a href="http://www.innersloth.com/merchpolicy.php" class="policy" target="_blank">Merch Policy</a> |
-        <a href="http://www.innersloth.com/privacy.php" class="policy" target="_blank">Privacy Policy</a>
-    </nav>
-</footer>
-
 </html>
