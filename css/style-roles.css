@@ -1,82 +1,121 @@
+html { 
+    font-family: 'Inter', sans-serif; 
+    background-color: #FFFBFE;
+    color: #424B54;
+}
+
 .role-cover {
     display: flex;
+    padding: 130px 50px 50px 50px;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 12em;
+    text-align: center;
 }
 
-.crewmate-info {
+.role-title {
+    margin: 0;
+    padding: 0;
+    color: #CC444B;
+    font-size: 100px;
+    background-color: #FFFBFE;
+}
+
+.role-cover p {
+    margin: 0;
+    font-size: large;
+    width: 400px;
+}
+
+.info {
     display: flex;
-    padding: 8em;
+    padding: 4%;
 }
 
-.crewmate-info > section {
+.info-text {
     max-width: 50%;
     padding-right: 10%;
 }
 
-.crewmate-abilities {
-    padding: 4em;
-    background-color: lightgray;
-}
+.info-text p { font-size: 16px; }
 
-.crewmate-abilities > section {
+.abilities { padding: 4%; }
+.abilities-title { text-align: center; }
+
+.ability-container {
     display: flex;
     justify-content: space-evenly;
 }
 
-.imposter-info {
-    display: flex;
-    padding: 8em;
-}
-
-.imposter-info > img {
-    padding-right: 10%;
-}
-
-.imposter-abilities {
-    padding: 4em;
-    background-color: lightgray;
-}
-
-.imposter-abilities > section {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#ability {
+.ability {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 300px;
-    padding: 4em;
+    max-width: 50%;
+    padding: 2%;
 }
 
-#abilities-title {
-    text-align: center;
-}
+#crewmate-info { background-color: #e9f5ff; }
+#crewmate-abilities { background-color: #cae7ff; }
+
+#imposter-info { background-color: #ffc3bd; }
+#imposter-abilities { background-color: #ffabab; }
 
 .related-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4em;
+    padding: 2% 3% 4% 3%;
     background-color: #424B54;
 }
 
-.related-content > h1 {
-    color: whitesmoke;
-    padding-bottom: 24px; 
+.related-content h2 {
+    color: #FFFBFE;
+    font-size: 28px;
+    padding-bottom: 14px;
 }
 
-.related-content > section > a{
-    font-size: medium;
-    border: none;
-    padding: 12px 24px 12px 24px;
+.related-content a {
+    padding: 12px 28px 12px 28px;
     margin: 8px;
     border-radius: 8px;
     color: #424B54;
     text-decoration: none;
-    background-color: whitesmoke;
+    background-color: #FFFBFE;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .role-cover { padding: 130px 50px 50px 50px; }
+
+    .role-title { font-size: 60px; }
+
+    .role-cover p {
+        font-size: 16px;
+        max-width: 250px;
+    }
+
+    .info-title { display: none; }
+
+    .info {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info-text {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .info-banner { width: 90%; }
+
+    .ability-container {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ability { max-width: 100%; }
+
+    .related-content { padding-bottom: 10%; }
 }

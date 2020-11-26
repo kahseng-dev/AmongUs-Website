@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Among Us</title>
     <link rel="icon" href="img/logo.jpg">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
     <link href="css/style-custom/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/style-roles.css" rel="stylesheet" type="text/css">
+    <script src="script/script.js" defer></script>
 </head>
 
 <body>
@@ -41,67 +41,90 @@
         </nav>
         <button class="get-it" id="get-it" type="button">GET IT NOW</button>
     </header>
+
+    <div class="bg-modal"> 
+        <div class="modal-content">
+            <div class="close">+</div>
+            <div class="purchase-platform">
+                <img alt="google play icon" src="img/icons/play-store-icon.png" width="72" height="72" />
+                <a href="https://play.google.com/store/apps/details?id=com.innersloth.spacemafia&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank">Google Play</a>
+            </div>
+            <div class="purchase-platform">
+                <img alt="app store icon" src="img/icons/apple-icon.png" width="72" height="72" />
+                <a href="https://apps.apple.com/us/app/among-us/id1351168404?ls=1" class="purchase-platform" target="_blank">App Store</a>
+            </div>
+            <div class="purchase-platform">
+                <img alt="itch io icon" src="img/icons/itchio-icon.png" width="72" height="72" />
+                <a href="https://innersloth.itch.io/among-us/purchase?popup=1" class="purchase-platform" target="_blank">itch.io</a>
+            </div>
+            <div class="purchase-platform">
+                <img alt="steam icon" src="img/icons/steam-icon.png" width="72" height="72" />
+                <a href="https://store.steampowered.com/app/945360/Among_Us/" class="purchase-platform" target="_blank">Steam</a>
+            </div>
+        </div>
+    </div>
     
-    <article class="role-cover">
-        <h1>Roles</h1>
+    <div class="role-cover">
+        <h1 class="role-title">ROLES</h1>
         <p>Within the game, there are two roles that will be given to the player at random.</p>
-    </article>
+    </div>
 
-    <div class="crewmate-info">
-        <section>
-            <h1>Crewmate</h1>
+    <div class="info" id="crewmate-info">
+        <div class="info-text">
+            <h1 class="info-title">Crewmate</h1>
             <p>The primary goal of a Crewmate is to complete all tasks while not being killed by the Impostor(s), with the secondary goal being to find The Impostor, and ejecting them off the ship. Crewmates who have been killed by An Impostor or ejected become ghosts.</p>
-        </section>
-        <img class="crewmate-banner" alt="crewmate-banner" src="img/crewmate_banner.png">
+        </div>
+        <img class="info-banner" alt="crewmate banner" src="img/crewmate-banner.png" width="540" height="90">
     </div>
 
-    <div class="crewmate-abilities">
-        <h1 id="abilities-title">Crewmate Abilities</h1>
-        <section>
-            <article class="ability-report" id="ability">
-                <img class="report-icon" alt="report-icon" src="img/report.png">
+    <div class="abilities" id="crewmate-abilities">
+        <h1 class="abilities-title">Crewmate Abilities</h1>
+        <div class="ability-container">
+            <div class="ability">
+                <img alt="report icon" src="img/report.png">
                 <p>A Crewmate can use the report button to report a dead body and bring the entire crew into a meeting to discuss who The Impostor may be. Impostors also have this ability. The Report button is above the 'Use' button.</p>
-            </article>
-            <article class="ability-use" id="ability">
-                <img class="use-icon" alt="use-icon" src="img/use.png">
+            </div>
+            <div class="ability">
+                <img alt="use icon" src="img/use.png">
                 <p>A Crewmate can use the report button to report a dead body and bring the entire crew into a meeting to discuss who The Impostor may be. Impostors also have this ability. The Report button is above the 'Use' button.</p>
-            </article>
-        </section>
+            </div>
+        </div>
     </div>
 
-    <div class="imposter-info">
-        <img class="imposter-banner" alt="imposter-banner" src="img/imposter_banner.png">
-        <section>
-            <h1>Imposter</h1>
-        </section>
-        <p></p>
+    <div class="info" id="imposter-info">
+        <div class="info-text">
+            <h1 class="info-title">Imposter</h1>
+            <p>The primary goal of The Impostor is to kill enough Crewmates to have an equal amount of Impostors and Crewmates before all tasks are completed and to have their true identity remain hidden.</p>
+        </div>
+        <img class="info-banner" alt="imposter banner" src="img/imposter-banner.png" width="540" height="90">
     </div>
 
-    <div class="imposter-abilities">
-        <h1 id="abilities-title">Imposter Abilities</h1>
-        <section>
-            <article class="ability-kill" id="ability">
-                <img class="kill-icon" alt="kill-icon" src="img/kill.png">
+    <div class="abilities" id="imposter-abilities">
+        <h1 class="abilities-title">Imposter Abilities</h1>
+        <div class="ability-container">
+            <div class="ability">
+                <img alt="kill icon" src="img/kill.png">
                 <p>An Impostor can kill a Crewmate. Killing a Crewmate leaves a dead body in the spot they were killed, and the Crewmates turn into a ghost. Kills have a cooldown of 10–60 seconds and a kill distance of either Short, Normal, or Long, which depend on the game options.</p>
-            </article>
-            <article class="ability-sabotage" id="ability">
-                <img class="sabotage-icon" alt="sabotage-icon" src="img/sabotage.png">
+            </div>
+            <div class="ability">
+                <img alt="sabotage icon" src="img/sabotage.png">
                 <p>An Impostor can Sabotage, which creates a temporary problem that Crewmates must either wait out, ignore, or fix. Impostors can fix their Sabotage, which may help them avoid suspicion. Impostors who are ghosts can also sabotage. On the maps The Skeld and Polus, Impostors can close doors to hinder player movement or conceal the suspicious activity. A ghost cannot fix a sabotage.</p>
-            </article>
-            <article class="ability-vent" id="ability">
-                <img class="vent-icon" alt="vent-icon" src="img/vent.png">
+            </div>
+            <div class="ability">
+                <img alt="vent icon" src="img/vent.png">
                 <p>The Impostor can hide in vents. Vents allow The Impostor to either hide or quickly move around the map. When close enough to a vent, the Sabotage button will be replaced with the vent button. However, hiding in a vent pauses both kill and sabotage cooldowns until The Impostor exits the vent. The Admin panel can still detect Impostors hiding in the vents of a room.</p>
-            </article>
-        </section>
+            </div>
+        </div>
     </div>
 
-    <nav class="related-content">
-        <h1>Related Content</h1>
-        <section>
+    <section class="related-content">
+        <h2>Related Content</h2>
+        <div>
             <a href="roles.html">Roles</a>
             <a href="maps.html">Maps</a>
-        </section>
-    </nav>
+        </div>
+    </section>
+
     <footer>
         <a href="javascript:btn.onclick();" class="get-it">GET IT NOW</a>
         <img class="dev-logo" alt="dev logo" width="140" height="128" src="img/dev-logo.png" />
