@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -12,6 +12,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/style-maps.css" rel="stylesheet" type="text/css">
     <script src="script/script-maps.js" defer></script>
+    <script src="script/script.js" defer></script>
 </head>
 
 <body>
@@ -43,60 +44,86 @@
         <button class="get-it" id="get-it" type="button">GET IT NOW</button>
     </header>
 
-    <h1 class="maps">MAPS</h1>
+    <div class="bg-modal"> 
+        <div class="modal-content">
+            <div class="close">+</div>
+            <div class="purchase-platform">
+                <img alt="google play icon" src="img/icons/play-store-icon.png" width="72" height="72" />
+                <a href="https://play.google.com/store/apps/details?id=com.innersloth.spacemafia&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank">Google Play</a>
+            </div>
+            <div class="purchase-platform">
+                <img alt="app store icon" src="img/icons/apple-icon.png" width="72" height="72" />
+                <a href="https://apps.apple.com/us/app/among-us/id1351168404?ls=1" class="purchase-platform" target="_blank">App Store</a>
+            </div>
+            <div class="purchase-platform">
+                <img alt="itch io icon" src="img/icons/itchio-icon.png" width="72" height="72" />
+                <a href="https://innersloth.itch.io/among-us/purchase?popup=1" class="purchase-platform" target="_blank">itch.io</a>
+            </div>
+            <div class="purchase-platform">
+                <img alt="steam icon" src="img/icons/steam-icon.png" width="72" height="72" />
+                <a href="https://store.steampowered.com/app/945360/Among_Us/" class="purchase-platform" target="_blank">Steam</a>
+            </div>
+        </div>
+    </div>
 
-    <div class="slideshow">
-        <div class="slider middle">
-            <div class="slides">
-                <input type="radio" name="r" id="r1">
-                <input type="radio" name="r" id="r2">
-                <input type="radio" name="r" id="r3">
-        
-                <div class="slide s1">
-                    <img src="img/skeld-map.png" alt="">
+    <div class="map">
+        <div class="map-information">
+            <h1 class="map-title">MAPS</h1>
+
+            <div class="navigation">
+                <label for="r1" class="bar" onclick="show_info(0)"></label>
+                <label for="r2" class="bar" onclick="show_info(1)"></label>
+                <label for="r3" class="bar" onclick="show_info(2)"></label>
+            </div>
+
+            <div id="map-description">
+                <div id="skeld-description">
+                    <img class="skeld-icon" alt="skeld icon" width="208" height="45" src="img/skeld-icon.png">
+                    <p>The Skeld is the primary and first map created in Among Us, set on a spaceship in space.</p>
                 </div>
-        
-                <div class="slide">
-                    <img src="img/miraHQ-map.png" alt="">
+                
+                <div id="miraHQ-description">
+                    <img class="miraHQ-icon" alt="miraHQ icon" width="208" height="45" src="img/miraHQ-icon.png">
+                    <p>MIRA HQ is the second map of Among Us, set high in the Earth's atmosphere. The facility is owned by the recurring company MIRA.</p>
                 </div>
-        
-                <div class="slide">
-                    <img src="img/polus-map.png" alt="">
+                
+                <div id="polus-description">
+                    <img class="polus-icon" alt="polus icon" width="144" height="45" src="img/polus-icon.png">
+                    <p>Polus is the third map in Among Us, which is set on the planet Polus as a planetary base.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slideshow">
+            <div class="slider middle">
+                <div class="slides">
+                    <input type="radio" name="r" id="r1">
+                    <input type="radio" name="r" id="r2">
+                    <input type="radio" name="r" id="r3">
+            
+                    <div class="slide s1">
+                        <img src="img/skeld-map.png" alt="">
+                    </div>
+            
+                    <div class="slide">
+                        <img src="img/miraHQ-map.png" alt="">
+                    </div>
+            
+                    <div class="slide">
+                        <img src="img/polus-map.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="navigation">
-        <label for="r1" class="bar" onclick="show_info(0)"></label>
-        <label for="r2" class="bar" onclick="show_info(1)"></label>
-        <label for="r3" class="bar" onclick="show_info(2)"></label>
-    </div>
-
-    <div id="map-description">
-        <div id="skeld-description">
-            <img class="skeld-icon" alt="skeld icon" width=208px height=45px src="img/skeld-icon.png">
-            <p>The Skeld is the primary and first map created in Among Us, set on a spaceship in space.</p>
-        </div>
-        
-        <div id="miraHQ-description">
-            <img class="miraHQ-icon" alt="miraHQ icon" width=208px height=45px src="img/miraHQ-icon.png">
-            <p>MIRA HQ is the second map of Among Us, set high in the Earth's atmosphere. The facility is owned by the recurring company MIRA.</p>
-        </div>
-        
-        <div id="polus-description">
-            <img class="polus-icon" alt="polus icon" width=144px height=45px src="img/polus-icon.png">
-            <p>Polus is the third map in Among Us, which is set on the planet Polus as a planetary base.</p>
-        </div>
-    </div>
-
-    <nav class="related-content">
-        <h1>Related Content</h1>
-        <section>
+    <section class="related-content">
+        <h2>Related Content</h2>
+        <div>
             <a href="roles.html">Roles</a>
             <a href="maps.html">Maps</a>
-        </section>
-    </nav>
+        </div>
+    </section>
     
     <footer>
         <a href="javascript:btn.onclick();" class="get-it">GET IT NOW</a>
