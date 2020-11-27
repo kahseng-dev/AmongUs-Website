@@ -3,12 +3,14 @@ html {
     background-color: #FFFBFE;
 }
 
+/* map container */
 .map {
     display: flex;
     flex-wrap: wrap;
     padding: 10% 5% 5% 5%;
 }
 
+/* map page title */
 .map-title {
     display: flex;
     margin: 0;
@@ -17,22 +19,7 @@ html {
     font-size: 100px;
 }
 
-.slides {
-    width: 500%;
-    height: 100%;
-    display: flex;
-}
-  
-.slide {
-    width: 20%;
-    transition: 0.6s;
-}
-
-.slide img{
-    width: 100%;
-    height: 100%;
-}
-
+/* map slideshow */
 .slideshow {
     display: flex;
     align-items: center;
@@ -45,6 +32,25 @@ html {
     overflow: hidden;
 }
 
+/* container for all slides */
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+/* individual slide */
+.slide {
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+/* navigation bar for slideshow */
 .navigation {
     display: flex;
     padding-bottom: 5%;
@@ -59,20 +65,24 @@ html {
     transition: 0.3s;
 }
 
+/* highlight navigation bar when user hovers over */
 .bar:hover{
     background-color: #CC444B;
     border: 1px solid #CC444B;
 }
 
+/* hide default radio button */
 input[name="r"] {
     position: absolute;
     visibility: hidden;
 }
 
+/* switching maps on the navigation bar button */
 #r1:checked ~ .s1 { margin-left: 0; }
-#r2:checked ~ .s1{ margin-left: -20%; }
+#r2:checked ~ .s1 { margin-left: -20%; }
 #r3:checked ~ .s1 { margin-left: -40%; }
 
+/* map description section */
 #map-description {
     height: 150px;
     flex-direction: column;
@@ -80,6 +90,7 @@ input[name="r"] {
     color: #424B54;
 }
 
+/* related pages about game information */
 .related-content {
     display: flex;
     flex-direction: column;
@@ -103,7 +114,7 @@ input[name="r"] {
     background-color: #FFFBFE;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) { /* when in mobile view or window is within 800px */
     .map {
         flex-direction: column;
         padding: 25% 10% 0 10%;

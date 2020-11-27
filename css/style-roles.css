@@ -4,6 +4,7 @@ html {
     color: #424B54;
 }
 
+/* game role page label */
 .role-cover {
     display: flex;
     padding: 130px 50px 50px 50px;
@@ -26,6 +27,7 @@ html {
     width: 400px;
 }
 
+/* standardize all role information section */
 .info {
     display: flex;
     padding: 4%;
@@ -38,6 +40,7 @@ html {
 
 .info-text p { font-size: 16px; }
 
+/* standardize all abilities information section */
 .abilities { padding: 4%; }
 .abilities-title { text-align: center; }
 
@@ -54,12 +57,14 @@ html {
     padding: 2%;
 }
 
+/* custome color theme for different roles */
 #crewmate-info { background-color: #e9f5ff; }
 #crewmate-abilities { background-color: #cae7ff; }
 
 #imposter-info { background-color: #ffc3bd; }
 #imposter-abilities { background-color: #ffabab; }
 
+/* related pages about game information */
 .related-content {
     display: flex;
     flex-direction: column;
@@ -83,7 +88,7 @@ html {
     background-color: #FFFBFE;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) { /* when in mobile view or window is within 800px */
 
     .role-cover { padding: 130px 50px 50px 50px; }
 

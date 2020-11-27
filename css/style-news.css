@@ -1,3 +1,4 @@
+/* news page labels */
 .cover {
     display: flex;
     flex-direction: column;
@@ -14,6 +15,7 @@
 
 .cover p { margin: 0; }
 
+/* standardize all social rows */
 .social {
     display: flex;
     align-items: center;
@@ -28,11 +30,13 @@
 .social-text { padding: 0 5% 0 5%; }
 .social-cover { width: 60%; }
 
+/* custom color for each social row */
 #steam { color: #66c0f4; background-color: #171A21; }
 #twitter { color: #1DA1F2; background-color: #14171A; }
 #discord { color: #7289DA; background-color: #23272A; }
 #merch-store { color: #FDCA40; background-color: #FB6107; }
 
+/* crewmate decoration positioning */
 .red-crewmate {
     width: 10%;
     position: absolute;
@@ -54,6 +58,7 @@
     transform: translate(10%,-50%);
 }
 
+/* styling for visit social page button */
 .visit-page {
     font-size: medium;
     border: none;
@@ -64,7 +69,7 @@
     background-color: whitesmoke;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) { /* when in mobile view or window is within 900px */
     .cover {
         text-align: center;
         padding: 120px 24px 60px 24px; 
